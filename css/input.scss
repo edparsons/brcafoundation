@@ -1,0 +1,689 @@
+/*		COLOR VARIABLES
+================================*/
+$white: rgb(230, 230, 230);
+$light-pink: rgb(255, 182, 255);
+$lighter-pink: rgb(255, 233, 255);
+$pink: rgb(255, 0, 255);
+$dark-pink: rgb(171, 0, 171);
+$dark-grey: rgb(77, 77, 77);
+$darker-grey: rgb(102, 102, 102);
+$light-grey: rgb(153, 153, 153);
+$lighter-grey: rgb(120, 120, 120);
+
+
+
+/*		GENERAL STYLES
+================================*/
+.no-p-btm {
+	padding-bottom: 0;
+}
+
+
+/*		NAV/HEADER SECTION
+================================*/
+#header {
+	height: 123px;
+}
+
+#logo {
+	img {
+		max-height: 90px;
+		height: auto;
+		margin-top: 25px;
+	}
+}
+#header.header-sticky:not(.header-static) #header-wrap{
+	height: 78px;
+
+	nav#mainMenu ul.main-menu,
+	.nav-main-menu-responsive {
+		height: 78px;
+	}
+}
+
+.nav-main-menu-responsive {
+	height: 123px;
+}
+
+#mainMenu > ul > li > a {
+	height: 123px;
+	line-height: 103px;
+	font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+#header.header-sticky:not(.header-static) {
+	height: 78px;
+
+		#logo img {
+		max-height: 60px;
+		height: auto;
+		margin-top: 9px;
+	}
+
+	#mainMenu > ul > li > a {
+		line-height: 60px;
+	}
+}
+
+#header.header-dark.header-sticky.header-navigation-light .main-menu > ul > li > a {
+	color: #fff;
+}
+
+#mainMenu ul.dropdown-menu {
+	border: 0px solid black;
+	background-color: rgba(0,0,0,.56);	
+}
+
+#mainMenu ul li.mega-menu-item .mega-menu-title, #mainMenu ul li.dropdown:not(.mega-menu-item) li {
+	border: 0px solid black;
+}
+
+.lines, .lines:before, .lines:after {
+	background-color: #fff;
+}
+
+#header.header-sticky #header-wrap,
+#header.header-dark-transparent {
+	background-color: rgba(0,0,0,.56);
+}
+
+.donate-button {
+	width: 210px;
+	position:fixed;
+	right: 25px;
+	padding: 5px 0;
+	background-color: rgb(255,0,255);
+	box-shadow: 0 5px 10px #222;
+	z-index: 1;
+	transform: skewX(-19deg);
+
+	p {
+		font-weight: 700;
+		font-size: 27px;
+		padding: 2px 0;
+		padding-top: 4px;
+		margin: 0;
+		color: rgba(255, 255, 255, .67);
+		transform: skewX(19deg);
+	}
+}
+
+.donate-button:hover {
+	background-color:rgb(255,141,255);
+	cursor: auto;
+}
+
+/*		SLIDER SECTION
+================================*/
+
+#slider {
+	z-index: -1;
+	
+	h2 {
+		letter-spacing: 2px;
+		font-size: 76px;
+		line-height: 71px;
+	}
+
+	.slide-captions h1 {
+		position: absolute;
+	    bottom: -17px;
+	    left: 0;
+	    right: 0;
+	    margin-bottom: 0;
+	}
+
+	button {
+		width: 270px;
+		height: 60px;
+		background: transparent;
+		font-size: 26px;
+		border: 1px solid rgba(255,255,255,.6);
+		opacity: .87;
+	}
+}
+
+
+/*		HOME: PARTNERS SECTION
+=============================================*/
+.school-imgs {
+	padding: 98px 0;
+	.owl-controls,
+	.owl-nav,
+	.owl-dots {
+		display: none;
+	}
+	// position: relative;
+	// bottom: 40px;
+	// right: 50px;
+	// top: -25px;
+}
+
+	/*		PARTNERS: PARTNERS BIO SECTION
+	=============================================*/
+
+	.partners-section {
+
+		h3 {
+			font-size: 34px;
+			letter-spacing: .8px;
+    		line-height: 1;
+    		padding-top: 7px;
+		}
+
+		h4 {
+			font-size: 27px;
+			line-height: 30px;
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 26px;
+			letter-spacing: .1px;
+		}
+
+		.news-research {
+
+			img {
+				width: 230px;
+				position: absolute;
+				top: -137px;
+			}
+
+			h3 {
+				font-size: 30px;
+			}
+
+			.article-brief {
+				.article-heading,
+				.article-description,
+				.article-link {
+					font-size: 12px;
+					line-height: 15px;
+					letter-spacing: 0;
+					margin: 0;
+					padding: 0;
+					display: block;
+				}
+
+				.article-heading {
+					padding-top: 16px;
+				}
+			}
+		}
+	}
+
+	.harvard {
+		padding-bottom: 160px;
+		p {
+			color: $darker-grey;
+		}
+
+		.news-research {
+			img {
+				top: -162px;
+			}
+		}
+	}
+
+	.stanford {
+		
+		p {
+			color: $light-grey;
+			line-height: 22px;
+		}
+
+		.article-heading {
+			color: $dark-grey !important;
+		}
+	}
+
+	.ucsf {
+
+		.partners-heading {
+			color: $lighter-pink !important;
+		}
+
+		p,
+		.article-description {
+			color: $light-pink;
+		}
+
+		.news-research {
+			img {
+				width: 356px;
+				top: -160px;
+			}
+		}
+	}
+
+	/*		PARTNERS: DONATE SECTION
+	=============================================*/
+	.donate-wrap {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding: 0;
+
+		.donate-highlight {
+			height: 30px;
+			width: 100%;
+			background-color: rgb(0, 0, 255);
+			border-radius: 30px 0 0 0;
+		}
+	}
+
+	.donate-section {
+		padding: 39px 0;
+		h1 {
+			font-size: 69px;
+			line-height: 65px;
+			margin: 0;
+		}
+
+		h2 {
+			font-size: 28px;
+			line-height: 32px;
+			margin: 0;
+		}
+
+		.donate-btn {
+			width: 270px;
+			height: 60px;
+			color:rgba(255,255,255,0.87) !important;
+			font-size: 43px;
+			border:1px solid rgba(255,255,255,0.6);
+			border-radius: 0;
+			margin: 0;
+			padding: 0 !important;
+			position: absolute;
+		    bottom: 122px;
+		    right: 51px;
+		}
+
+		.donate-btn:hover {
+			color: rgba(255,255,255,1) !important;
+			border: 1px solid rgba(255,255,255,1);
+		}
+	}
+
+			/*		WHAT WE DO: INFO SECTION
+			=============================================*/
+			.what-we-do {
+				h5 {
+					font-size: 27px;
+					line-height: 30px;
+					margin: 0;
+				}
+
+				.help {
+					h5 {
+						font-size: 18px;
+						line-height: 18px;
+						color: $light-pink;
+						letter-spacing: 0.5px;
+					}
+
+					.donate-btn {
+						width: 100%;
+						height: 60px;
+						font-size: 43px;
+						border: 1px solid $pink;
+					    border-radius: 0;
+					    padding: 0 !important;
+					    margin-bottom: 0;
+					}
+
+					p {
+						font-size: 14px;
+						line-height: 20px;
+						letter-spacing: .1px;
+					}
+				}
+			}
+
+
+
+
+	/*		WHO WE ARE: DIRECTORS SECTION
+	=============================================*/
+	.directors {
+		h2 {
+			font-size: 65px;
+			color: rgba(171,0,171,.87) !important;
+			letter-spacing: .5px;
+			padding-top: 2px;
+			margin-bottom: 0;
+		}
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		hr {
+			width: 70px;
+			border-top: 5px solid rgb(255,0,255);
+			margin: 40px auto;
+		}
+
+		.info-col {
+			padding: 0 26px;
+
+			.bio {
+				letter-spacing: .1px;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.border {
+			border-bottom: 1px solid rgb(255,182,255);
+		}
+	}
+
+
+	/*		WHO WE ARE: DEP DIRECTOR SECTION
+	===============================================*/
+	.dep-director {
+		.dep-header {
+			img {
+				width: 158px;
+				height: 158px;
+				margin-bottom: 40px;
+				border-radius : 50%;
+				border: 5px solid #e8e6e8;
+				background: #cbcccd;
+			}
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			p {
+				color: black !important;
+				margin-bottom: 0;
+			}
+		}
+		hr {
+			margin: 30px 0;
+		}
+	}
+
+/*		HOME: PARTICLES SECTION
+===============================================*/
+
+.particles-section p.lead {
+	font-size:43px;
+	letter-spacing: .5px;
+	line-height: 44px;
+	position: relative;
+	top: 25px;
+
+}
+
+.home-page .particles-section #particles-js {
+    background: #f0c1fa;
+}
+
+
+
+	/*		WHO WE ARE: PARTICLES SECTION
+	===============================================*/
+	.who-we-are-page {
+
+		h1 {
+			color: #fff;
+			font-size: 65px;
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 49px;
+			letter-spacing: .5px;
+			span {
+				color: rgb(255,0,255) !important;
+			}
+		}
+
+		h3 {
+			font-size: 28px;
+			line-height: 1.2;
+		}
+
+		#particles-js {
+    		background: black !important;
+		}
+	}
+
+
+
+
+
+/*		HOME: IMAGINE SECTION
+================================*/
+.imagine-text {
+	p{
+		font-size: 65px;
+		line-height: 1;
+		letter-spacing: .6px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+
+	/*		WHO WE ARE: VISION SECTION
+	=========================================*/
+	.vision {
+		h1 {
+			letter-spacing: 1px;
+		}
+
+		h2 {
+			font-size: 43px;
+			line-height: 46px;
+			letter-spacing: -1px;
+		}
+
+		.mission {
+			h1 {
+				font-size: 66px;
+				color: rgba(171,0,171,.87)!important;
+				margin: 0;
+			}
+
+			h2 {
+				font-size: 28px;
+				line-height: 31px;
+			}
+		}
+	}
+
+
+
+/*		PLEASE JOIN SECTION
+================================*/
+.please-join-section {
+	padding: 50px 0;
+		.donate-btn {
+			width:80%;
+			margin:0 auto;
+			max-width: 640px;
+			height: 60px;
+			font-size: 43px;
+			color:rgba(255,255,255,0.87) !important;
+			border:1px solid rgba(255,255,255,0.6);
+			text-align:center;
+			letter-spacing: 2px;;
+			padding: 0 !important;
+			opacity: .87;
+			border-radius: 0;
+	}
+	p {
+		letter-spacing: .5px;
+	}
+
+	p:first-child {
+		font-size: 65px;
+		line-height: 56px;
+		margin: 0;
+	}
+
+	p:nth-child(2) {
+		font-size: 28px;
+	}
+
+	p:nth-child(3) {
+		font-size: 23px;
+		line-height: 1.2;
+	}
+}
+
+
+/*		WHAT IS POSSIBLE SECTION
+===================================*/
+.what-is-possible-section {
+	p {
+		font-size: 29px;
+	    line-height: 1.5;
+	    letter-spacing: .3px;
+	}
+}
+
+		/*		CONTACT US: CONTACT SECTION
+		===================================*/
+		.contact {
+			h3 {
+				font-size: 29px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 24px;
+				color: $lighter-grey;
+			}
+
+			address {
+				line-height: 20px;
+				span {
+					color: $lighter-grey;
+				}
+			}
+
+			// FORM STYLES 
+
+			.form-control {
+				border: none;
+			}
+
+			label {
+				color: rgb(120, 120, 120);
+			}
+
+			form {
+				button {
+					border-radius: 0;
+					border: none !important;
+				}
+			}
+		}
+
+
+
+/*		COLORS SECTION
+================================*/
+
+.text-uppercase {
+	text-transform:uppercase;
+}
+
+.text-pink {
+	color: rgb(255, 0, 255) !important;
+}
+
+.background-dark-pink {
+	background-color: rgb(168, 24, 171) !important;
+	color: white;
+}
+
+.background-light-pink {
+	background-color: rgb(255, 141, 255) !important;
+	color: rgb(255, 212,255);
+}
+
+.background-lighter-pink {
+	background-color: $lighter-pink;
+}
+
+.background-pink {
+	background-color: rgb(255, 0, 255) !important;
+	color: white;
+}
+
+.background-black {
+	background-color: black !important;
+	color: white;	
+}
+
+.background-green {
+	background-color: rgb(127,206,206) !important;
+	color: white;	
+}
+
+.imagine-section {
+	font-size:65px;
+}
+
+/*		FOOTER SECTION
+================================*/
+
+
+footer .mission-statement {
+	 margin: 0;
+	 padding-bottom: 16px;
+	 font-size: 16px;
+}
+
+/*		MEDIA QUERIES 
+================================*/
+@media (max-width: 1199px) {
+	#slider .slide-captions h1 {
+		bottom: -11px;
+	}
+
+	.donate-section .donate-btn {
+		bottom: 176px;
+	}
+}
+
+@media (max-width: 992px) {
+	.donate-button {
+		position: absolute;
+	}
+
+	.donate-section .donate-btn {
+		bottom: 239px;
+	}
+	
+	.news-research {
+		padding-left: 0 !important;
+	}
+	.partners-section .news-research img {
+		position: initial;
+	}
+}
+
+@media (max-width: 767px) {
+	#slider .slide-captions h1 {
+		bottom: -7px;
+	}
+
+	.donate-section .donate-btn {
+		position: relative;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
