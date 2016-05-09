@@ -3,6 +3,7 @@
 $white: rgb(230, 230, 230);
 $light-pink: rgb(255, 182, 255);
 $lighter-pink: rgb(255, 233, 255);
+$bright-pink: rgb(255, 173, 255);
 $pink: rgb(255, 0, 255);
 $dark-pink: rgb(171, 0, 171);
 $dark-grey: rgb(77, 77, 77);
@@ -30,6 +31,7 @@ $lighter-grey: rgb(120, 120, 120);
 		max-height: 90px;
 		height: auto;
 		margin-top: 25px;
+		margin-left: 20px;
 	}
 }
 #header.header-sticky:not(.header-static) #header-wrap{
@@ -49,6 +51,7 @@ $lighter-grey: rgb(120, 120, 120);
 	height: 123px;
 	line-height: 103px;
 	font-size: 14px;
+	font-weight: initial;
     letter-spacing: 1.5px;
 }
 
@@ -91,7 +94,7 @@ $lighter-grey: rgb(120, 120, 120);
 .donate-button {
 	width: 210px;
 	position:fixed;
-	right: 25px;
+	right: 70px;
 	padding: 5px 0;
 	background-color: rgb(255,0,255);
 	box-shadow: 0 5px 10px #222;
@@ -308,6 +311,19 @@ $lighter-grey: rgb(120, 120, 120);
 		}
 	}
 
+	/*		PRESS RELEASE: PRESS SECTION
+	=============================================*/
+
+	.press {
+		.press-release-date {
+			color: $light-grey;
+		}
+
+		.article-heading {
+			color: $dark-grey;
+		}
+	}
+
 			/*		WHAT WE DO: INFO SECTION
 			=============================================*/
 			.what-we-do {
@@ -315,6 +331,10 @@ $lighter-grey: rgb(120, 120, 120);
 					font-size: 27px;
 					line-height: 30px;
 					margin: 0;
+				}
+
+				p {
+					color: $light-grey;
 				}
 
 				.help {
@@ -339,6 +359,7 @@ $lighter-grey: rgb(120, 120, 120);
 						font-size: 14px;
 						line-height: 20px;
 						letter-spacing: .1px;
+						color: #000;
 					}
 				}
 			}
@@ -349,6 +370,19 @@ $lighter-grey: rgb(120, 120, 120);
 	/*		WHO WE ARE: DIRECTORS SECTION
 	=============================================*/
 	.directors {
+
+		.profile-img-wrap {
+			max-height: 343px;
+		    position: relative;
+		    z-index: 1;
+		    overflow: hidden;
+
+		    img {
+		    	position: relative;
+		    	z-index: -1;
+		    }
+		}
+
 		h2 {
 			font-size: 65px;
 			color: rgba(171,0,171,.87) !important;
@@ -389,13 +423,26 @@ $lighter-grey: rgb(120, 120, 120);
 	===============================================*/
 	.dep-director {
 		.dep-header {
-			img {
+
+			.dep-img {
 				width: 158px;
 				height: 158px;
+				margin: auto;
 				margin-bottom: 40px;
 				border-radius : 50%;
-				border: 5px solid #e8e6e8;
-				background: #cbcccd;
+				border: 7px solid #e8e6e8;
+				position: relative;
+				background: #333;
+				z-index: 1;
+				overflow: hidden;
+			}
+			img {
+				max-width: 103%;
+				left: 3px;
+    			bottom: 16px;
+				position: relative;
+				z-index: -1;
+
 			}
 
 			h4 {
@@ -417,7 +464,7 @@ $lighter-grey: rgb(120, 120, 120);
 
 .particles-section p.lead {
 	font-size:43px;
-	letter-spacing: .5px;
+	letter-spacing: -2.5px;
 	line-height: 44px;
 	position: relative;
 	top: 25px;
@@ -437,6 +484,7 @@ $lighter-grey: rgb(120, 120, 120);
 		h1 {
 			color: #fff;
 			font-size: 65px;
+			line-height: 64px;
 		}
 
 		h2 {
@@ -450,7 +498,7 @@ $lighter-grey: rgb(120, 120, 120);
 
 		h3 {
 			font-size: 28px;
-			line-height: 1.2;
+			line-height: 34px;
 		}
 
 		#particles-js {
@@ -479,6 +527,8 @@ $lighter-grey: rgb(120, 120, 120);
 	.vision {
 		h1 {
 			letter-spacing: 1px;
+			font-size: 76px;
+			line-height: 46px;
 		}
 
 		h2 {
@@ -617,6 +667,10 @@ $lighter-grey: rgb(120, 120, 120);
 	background-color: $lighter-pink;
 }
 
+.background-bright-pink {
+	background-color: $bright-pink;
+}
+
 .background-pink {
 	background-color: rgb(255, 0, 255) !important;
 	color: white;
@@ -638,6 +692,27 @@ $lighter-grey: rgb(120, 120, 120);
 
 /*		FOOTER SECTION
 ================================*/
+.widget-newsletter {
+	small {
+		font-size: 14px;
+	}
+
+		.tax-info {
+			width: 245px;
+			margin-top: 45px;
+
+			small {
+				line-height: 18px;
+			}
+
+
+			.tax-number {
+				font-size: 23px;
+				padding-bottom: 0;
+			}
+	}
+}
+
 
 
 footer .mission-statement {
@@ -646,11 +721,20 @@ footer .mission-statement {
 	 font-size: 16px;
 }
 
+.rights {
+	color: #6b6c6d;
+}
+
+.background-dark .widget.widget-newsletter .input-group-addon {
+	color: rgb(196, 197, 198);
+}
+
 /*		MEDIA QUERIES 
 ================================*/
 @media (max-width: 1199px) {
 	#slider .slide-captions h1 {
-		bottom: -11px;
+		bottom: -4px;
+		font-size: 83px;
 	}
 
 	.donate-section .donate-btn {
@@ -658,7 +742,29 @@ footer .mission-statement {
 	}
 }
 
+@media (max-width: 1108px) {
+	#slider h2 {
+		letter-spacing: 1px;
+	    font-size: 56px;
+	    line-height: 55px; 
+	}
+
+	#mainMenu > ul > li > a {
+		font-size: 12px;
+	}
+
+	.header-sticky #logo {
+		max-width: 380px; 
+		top: 9px;
+	}
+}
+
 @media (max-width: 992px) {
+	#slider h2 {
+	    font-size: 47px;
+	    line-height: 50px; 
+	}
+
 	.donate-button {
 		position: absolute;
 	}
@@ -673,11 +779,17 @@ footer .mission-statement {
 	.partners-section .news-research img {
 		position: initial;
 	}
+
+	#header.header-dark.header-navigation-light .lines, 
+	#header.header-dark.header-navigation-light .lines:before, 
+	#header.header-dark.header-navigation-light .lines:after {
+		background-color: #fff;
+	}
 }
 
 @media (max-width: 767px) {
 	#slider .slide-captions h1 {
-		bottom: -7px;
+		bottom: 9px;
 	}
 
 	.donate-section .donate-btn {
@@ -685,5 +797,12 @@ footer .mission-statement {
 		bottom: 0;
 		left: 0;
 		right: 0;
+	}
+}
+
+@media (max-width: 580px) {
+	#slider .slide-captions h1 {
+		font-size: 50px;
+		bottom: 0;
 	}
 }

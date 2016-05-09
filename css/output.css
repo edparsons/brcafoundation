@@ -13,7 +13,8 @@
 #logo img {
   max-height: 90px;
   height: auto;
-  margin-top: 25px; }
+  margin-top: 25px;
+  margin-left: 20px; }
 
 #header.header-sticky:not(.header-static) #header-wrap {
   height: 78px; }
@@ -28,6 +29,7 @@
   height: 123px;
   line-height: 103px;
   font-size: 14px;
+  font-weight: initial;
   letter-spacing: 1.5px; }
 
 #header.header-sticky:not(.header-static) {
@@ -59,7 +61,7 @@
 .donate-button {
   width: 210px;
   position: fixed;
-  right: 25px;
+  right: 70px;
   padding: 5px 0;
   background-color: magenta;
   box-shadow: 0 5px 10px #222;
@@ -202,12 +204,21 @@
     color: white !important;
     border: 1px solid white; }
 
+/*		PRESS RELEASE: PRESS SECTION
+=============================================*/
+.press .press-release-date {
+  color: #999999; }
+.press .article-heading {
+  color: #4d4d4d; }
+
 /*		WHAT WE DO: INFO SECTION
 =============================================*/
 .what-we-do h5 {
   font-size: 27px;
   line-height: 30px;
   margin: 0; }
+.what-we-do p {
+  color: #999999; }
 .what-we-do .help h5 {
   font-size: 18px;
   line-height: 18px;
@@ -224,10 +235,19 @@
 .what-we-do .help p {
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: .1px; }
+  letter-spacing: .1px;
+  color: #000; }
 
 /*		WHO WE ARE: DIRECTORS SECTION
 =============================================*/
+.directors .profile-img-wrap {
+  max-height: 343px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .directors .profile-img-wrap img {
+    position: relative;
+    z-index: -1; }
 .directors h2 {
   font-size: 65px;
   color: rgba(171, 0, 171, 0.87) !important;
@@ -251,13 +271,23 @@
 
 /*		WHO WE ARE: DEP DIRECTOR SECTION
 ===============================================*/
-.dep-director .dep-header img {
+.dep-director .dep-header .dep-img {
   width: 158px;
   height: 158px;
+  margin: auto;
   margin-bottom: 40px;
   border-radius: 50%;
-  border: 5px solid #e8e6e8;
-  background: #cbcccd; }
+  border: 7px solid #e8e6e8;
+  position: relative;
+  background: #333;
+  z-index: 1;
+  overflow: hidden; }
+.dep-director .dep-header img {
+  max-width: 103%;
+  left: 3px;
+  bottom: 16px;
+  position: relative;
+  z-index: -1; }
 .dep-director .dep-header h4 {
   margin-bottom: 0; }
 .dep-director .dep-header p {
@@ -270,7 +300,7 @@
 ===============================================*/
 .particles-section p.lead {
   font-size: 43px;
-  letter-spacing: .5px;
+  letter-spacing: -2.5px;
   line-height: 44px;
   position: relative;
   top: 25px; }
@@ -282,7 +312,8 @@
 ===============================================*/
 .who-we-are-page h1 {
   color: #fff;
-  font-size: 65px; }
+  font-size: 65px;
+  line-height: 64px; }
 .who-we-are-page h2 {
   color: #fff;
   font-size: 49px;
@@ -291,7 +322,7 @@
     color: magenta !important; }
 .who-we-are-page h3 {
   font-size: 28px;
-  line-height: 1.2; }
+  line-height: 34px; }
 .who-we-are-page #particles-js {
   background: black !important; }
 
@@ -307,7 +338,9 @@
 /*		WHO WE ARE: VISION SECTION
 =========================================*/
 .vision h1 {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 76px;
+  line-height: 46px; }
 .vision h2 {
   font-size: 43px;
   line-height: 46px;
@@ -395,6 +428,9 @@
 .background-lighter-pink {
   background-color: #ffe9ff; }
 
+.background-bright-pink {
+  background-color: #ffadff; }
+
 .background-pink {
   background-color: magenta !important;
   color: white; }
@@ -412,20 +448,54 @@
 
 /*		FOOTER SECTION
 ================================*/
+.widget-newsletter small {
+  font-size: 14px; }
+.widget-newsletter .tax-info {
+  width: 245px;
+  margin-top: 45px; }
+  .widget-newsletter .tax-info small {
+    line-height: 18px; }
+  .widget-newsletter .tax-info .tax-number {
+    font-size: 23px;
+    padding-bottom: 0; }
+
 footer .mission-statement {
   margin: 0;
   padding-bottom: 16px;
   font-size: 16px; }
 
+.rights {
+  color: #6b6c6d; }
+
+.background-dark .widget.widget-newsletter .input-group-addon {
+  color: #c4c5c6; }
+
 /*		MEDIA QUERIES 
 ================================*/
 @media (max-width: 1199px) {
   #slider .slide-captions h1 {
-    bottom: -11px; }
+    bottom: -4px;
+    font-size: 83px; }
 
   .donate-section .donate-btn {
     bottom: 176px; } }
+@media (max-width: 1108px) {
+  #slider h2 {
+    letter-spacing: 1px;
+    font-size: 56px;
+    line-height: 55px; }
+
+  #mainMenu > ul > li > a {
+    font-size: 12px; }
+
+  .header-sticky #logo {
+    max-width: 380px;
+    top: 9px; } }
 @media (max-width: 992px) {
+  #slider h2 {
+    font-size: 47px;
+    line-height: 50px; }
+
   .donate-button {
     position: absolute; }
 
@@ -436,15 +506,24 @@ footer .mission-statement {
     padding-left: 0 !important; }
 
   .partners-section .news-research img {
-    position: initial; } }
+    position: initial; }
+
+  #header.header-dark.header-navigation-light .lines,
+  #header.header-dark.header-navigation-light .lines:before,
+  #header.header-dark.header-navigation-light .lines:after {
+    background-color: #fff; } }
 @media (max-width: 767px) {
   #slider .slide-captions h1 {
-    bottom: -7px; }
+    bottom: 9px; }
 
   .donate-section .donate-btn {
     position: relative;
     bottom: 0;
     left: 0;
     right: 0; } }
+@media (max-width: 580px) {
+  #slider .slide-captions h1 {
+    font-size: 50px;
+    bottom: 0; } }
 
 /*# sourceMappingURL=output.css.map */

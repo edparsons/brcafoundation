@@ -1892,7 +1892,8 @@ body.wide #header.header-fullwidth nav .main-menu .mega-menu-item .dropdown-menu
     width: 100%;
     overflow: hidden;
     padding: 0px;
-    margin-top:-123px;
+    top:-123px;
+    margin-bottom:-123px;
 }
 #home {
     width: 100%;
