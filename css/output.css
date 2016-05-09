@@ -93,7 +93,8 @@
     bottom: -17px;
     left: 0;
     right: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    letter-spacing: 4px; }
   #slider button {
     width: 270px;
     height: 60px;
@@ -514,16 +515,13 @@ footer .mission-statement {
     background-color: #fff; } }
 @media (max-width: 767px) {
   #slider .slide-captions h1 {
-    bottom: 9px; }
+    font-size: 50px;
+    bottom: 0; }
 
   .donate-section .donate-btn {
     position: relative;
     bottom: 0;
     left: 0;
     right: 0; } }
-@media (max-width: 580px) {
-  #slider .slide-captions h1 {
-    font-size: 50px;
-    bottom: 0; } }
 
 /*# sourceMappingURL=output.css.map */
