@@ -1605,7 +1605,7 @@ var INSPIRO = {};
                     twitterProfileImage = $elem.attr('data-profile-image') || false,
                     twitterTime = $elem.attr('data-time') || true,
                     twitterActions = $elem.attr('data-actions') || false;
-
+                /*
                 $elem.tweecool({
                     username: twitterUser,
                     limit: twitterLimit,
@@ -1613,6 +1613,7 @@ var INSPIRO = {};
                     show_actions: twitterActions,
                     show_time: twitterTime
                 });
+                */
             });
 
 

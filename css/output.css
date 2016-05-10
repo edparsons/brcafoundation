@@ -65,7 +65,7 @@
   padding: 5px 0;
   background-color: magenta;
   box-shadow: 0 5px 10px #222;
-  z-index: 1;
+  z-index: 2;
   transform: skewX(-19deg); }
   .donate-button p {
     font-weight: 700;
@@ -479,7 +479,10 @@ footer .mission-statement {
     font-size: 83px; }
 
   .donate-section .donate-btn {
-    bottom: 176px; } }
+    bottom: 176px; }
+
+  .directors .profile-img-wrap {
+    max-height: 275.328px; } }
 @media (max-width: 1108px) {
   #slider h2 {
     letter-spacing: 1px;
@@ -512,7 +515,10 @@ footer .mission-statement {
   #header.header-dark.header-navigation-light .lines,
   #header.header-dark.header-navigation-light .lines:before,
   #header.header-dark.header-navigation-light .lines:after {
-    background-color: #fff; } }
+    background-color: #fff; }
+
+  .directors .profile-img-wrap {
+    max-height: 327.688px; } }
 @media (max-width: 767px) {
   #slider .slide-captions h1 {
     font-size: 50px;
@@ -522,6 +528,9 @@ footer .mission-statement {
     position: relative;
     bottom: 0;
     left: 0;
-    right: 0; } }
+    right: 0; }
+
+  .directors .profile-img-wrap {
+    max-height: 424.172px; } }
 
 /*# sourceMappingURL=output.css.map */

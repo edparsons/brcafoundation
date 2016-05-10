@@ -66,6 +66,8 @@ $lighter-grey: rgb(120, 120, 120);
 
 	#mainMenu > ul > li > a {
 		line-height: 60px;
+		height: 100%;
+    margin-bottom: -2px;
 	}
 }
 
@@ -75,7 +77,7 @@ $lighter-grey: rgb(120, 120, 120);
 
 #mainMenu ul.dropdown-menu {
 	border: 0px solid black;
-	background-color: rgba(0,0,0,.56);	
+	background-color: rgba(0,0,0,.8);	
 }
 
 #mainMenu ul li.mega-menu-item .mega-menu-title, #mainMenu ul li.dropdown:not(.mega-menu-item) li {
@@ -98,7 +100,7 @@ $lighter-grey: rgb(120, 120, 120);
 	padding: 5px 0;
 	background-color: rgb(255,0,255);
 	box-shadow: 0 5px 10px #222;
-	z-index: 1;
+	z-index: 2;
 	transform: skewX(-19deg);
 
 	p {
@@ -741,6 +743,10 @@ footer .mission-statement {
 	.donate-section .donate-btn {
 		bottom: 176px;
 	}
+
+	.directors .profile-img-wrap {
+		max-height: 275.328px;
+	}
 }
 
 @media (max-width: 1108px) {
@@ -786,6 +792,10 @@ footer .mission-statement {
 	#header.header-dark.header-navigation-light .lines:after {
 		background-color: #fff;
 	}
+
+	.directors .profile-img-wrap {
+		max-height: 327.688px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -799,5 +809,9 @@ footer .mission-statement {
 		bottom: 0;
 		left: 0;
 		right: 0;
+	}
+
+	.directors .profile-img-wrap {
+		max-height: 424.172px;
 	}
 }
